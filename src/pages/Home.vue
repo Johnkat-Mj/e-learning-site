@@ -65,7 +65,7 @@
         </div>
     </section>
 
-    <section class="w-full flex items-center py-20 overflow-hidden">
+    <section class="w-full flex items-center pt-20 pb-6 overflow-hidden">
         <div class="max-w-screen-lg px-4 sm:w-10/12 sm:px-0 lg:max-w-screen-xl mx-auto relative">
             <div class="absolute -top-24 -z-20 right-0">
                 <img src="../assets/dotpatern.svg" alt="dot pattern" />
@@ -83,12 +83,12 @@
             </div>
         </div>
     </section>
-    <section class="relative flex items-center py-20 overflow-hidden">
+    <section class="relative flex items-center pt-20 pb-6 overflow-hidden">
         <div class="max-w-screen-lg px-4 sm:w-10/12 sm:px-0 lg:max-w-screen-xl mx-auto relative">
             <div class="grid md:grid-cols-2 gap-6">
                 <div class="col-span-1 relative flex items-end justify-end lg:h-[374px] lg:min-h-[374px]">
-                    <div class="z-10 absolute w-4/5 h-4/5 bg-primary top-0 left-0 rounded-lg"></div>
-                    <img src="../assets/girlsHappyWithABook.png" class="lg:h-[356px] z-20" alt="student happy" />
+                    <div class="z-10 absolute w-3/5 h-3/5 md:w-4/5 md:h-4/5 bg-primary top-0 left-0 rounded-lg"></div>
+                    <img src="../assets/girlsHappyWithABook.png" class=" lg:h-[356px] z-20" alt="student happy" />
                     <img src="../assets/calendarIco.png" class="absolute top-0 w-12 h-12 right-0" alt="calendar ico" />
                 </div>
                 <div class="flex col-span-1 items-end">
@@ -111,7 +111,7 @@
             </div>
         </div>
     </section>
-    <section class="w-full flex items-center py-20 overflow-hidden">
+    <section class="w-full flex items-center pt-20 pb-6 overflow-hidden">
         <div class="max-w-screen-lg px-4 sm:w-10/12 sm:px-0 lg:max-w-screen-xl mx-auto relative">
             <div class="flex flex-col gap-4 lg:gap-10 w-full">
                 <div class="flex items-center mx-auto lg:w-4/6">
@@ -134,7 +134,7 @@
         </div>
     </section>
 
-    <section class="relative flex items-center py-20 overflow-hidden">
+    <section class="relative flex items-center pt-20 pb-6 overflow-hidden">
         <div class="max-w-screen-lg px-4 sm:w-10/12 sm:px-0 lg:max-w-screen-xl mx-auto relative">
             <div class="grid md:grid-cols-2 gap-6">
                 <div class="flex col-span-1 items-end">
@@ -169,15 +169,15 @@
             </div>
         </div>
     </section>
-    <section class="relative flex items-center py-20 overflow-hidden">
+    <section class="relative flex items-center pt-12 pb-20 overflow-hidden">
         <div class="max-w-screen-lg px-4 sm:w-10/12 sm:px-0 lg:max-w-screen-xl mx-auto relative">
-            <div class="w-full p-8 rounded-lg bg-primary flex gap-8 lg:gap-10 items-center">
+            <div class="w-full p-8 rounded-lg bg-primary flex flex-col md:flex-row gap-8 lg:gap-10 items-center">
                 <div class=" w-full">
                     <h1 class="text-3xl md:text-4xl font-semibold text-white">
                         Etes-vous pret à commencer votrer cours maintenant?
                     </h1>
                 </div>
-                <div class="min-w-[200px]  block">
+                <div class=" md:min-w-[200px]  block">
                     <a href="" class="text-primary bg-white text-sm font-semibold rounded-lg px-4 py-3 transition duration-300 ">
                         Commencer maintenant
                     </a>
@@ -185,32 +185,31 @@
             </div>
         </div>
     </section>
-    <Footer/>
 </template>
 <script setup>
 import CardService from "./../components/CardService.vue";
 import CardCourse from "../components/CardCourse.vue";
-import Footer from '../components/Footer.vue'
+
 const datas = [
     {
         colorBg: "#E8AB0F",
         title: "Créatifivité",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, commodi. Aperiam a et, debitis",
+            "Lorem ipsum dolor sit ametconsectetur adipisi cingelit dolore mque commodi Aperiam a et, debitis",
         iconSrc: "Saly-26.png",
     },
     {
         colorBg: "#CB5AE8",
         title: "Professionnalisme",
         description:
-            "Aperiam a et, debitis voluptatibus praesentium distinctio accusamus error, consequatur fugiat, nostrum.",
+            "Aperiam a et, debitis voluptatibus praes entium distinctio accusamus error, consequatur fugiat, nostrum debitis.",
         iconSrc: "Other 03.png",
     },
     {
         colorBg: "#6A20E2",
         title: "Efficacité",
         description:
-            "amet, consectetur adipisicing elit. Doloremque, commodi. Aperiam a et, debitis voluptatibus praesentium",
+            "amet, consectetur adipisicingelit. Doloremque, commodi. Aperiam a et, debitis voluptatibus praesentium debitis",
         iconSrc: "Saly-12.png",
     },
 ];

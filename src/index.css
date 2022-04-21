@@ -1,10 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+input, button
+{
+    outline: none;
+}
 body
 {
     font-family: 'Inter', sans-serif;
+    min-height: 100vh;
 }
 .costum-gradient
 {
@@ -17,4 +21,32 @@ body
 }
 .btnClpOnLeft{
     clip-path: polygon( 5% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+@layer components
+{
+    .activeItem
+    {
+        @apply relative bg-primary text-white before:left-2 text-right w-full pl-8 !important;
+    }
+    .menuIsOpened
+    {
+        @apply left-0 rotate-0 z-[1003] opacity-100 transition-all duration-500 !important;
+    }
+    .menuIsOpened #overlayMenu
+    {
+        @apply z-[1002] opacity-100 transition-all duration-500 !important;
+    }
+    .menuIsOpened #menuBar, .menuIsOpened #copyR
+    {
+        @apply z-[1010] left-0 opacity-100 transition-all duration-500 !important;
+    }
+    .openDropD
+    {
+        @apply scale-y-100 origin-top opacity-100 transition-all duration-300 !important;
+    }
+    .openDropD + .overlayDrop
+    {
+        @apply scale-100 !important;
+    }
 }
