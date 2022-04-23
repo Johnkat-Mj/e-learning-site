@@ -1,0 +1,32 @@
+{
+    "courses": {
+        "idC": 1,
+        "authorName": "",
+        "authorAv": "",
+        "authorTitle": "",
+        "Description": "",
+        "imageCover":"",
+        "ContentC": [
+            {
+                "titleLeson": "",
+                "contentL": ""
+            },
+            {
+                "titleLeson": "",
+                "contentL": ""
+            },
+            {
+                "titleLeson": "",
+                "contentL": ""
+            },
+            {
+                "titleLeson": "",
+                "contentL": ""
+            },
+            {
+                "titleLeson": "",
+                "contentL": ""
+            }
+        ]
+    }
+}

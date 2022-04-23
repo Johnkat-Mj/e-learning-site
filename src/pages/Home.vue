@@ -4,7 +4,7 @@
             <div class="flex flex-col gap-4 lg:gap-10 w-full">
                 <div class="flex justify-center relative">
                     <h1
-                        class="text-3xl sm:text-4xl lg:text-5xl xl:text-7xl text-center font-extrabold text-f-color-title1">
+                        class="text-2xl small:text-3xl sm:text-4xl lg:text-5xl xl:text-7xl text-center font-extrabold text-f-color-title1">
                         BIENVENUE SUR Kusoma.IO
                     </h1>
                     <div class="absolute top-0 left-0">
@@ -15,7 +15,7 @@
                     </div>
                 </div>
                 <div
-                    class="flex items lg:h-[400px] xl:min-h-[420px] flex-col gap-6 p-8 lg:p-8 overflow-hidden lg:overflow-visible costum-gradient rounded-lg">
+                    class="flex items lg:h-[400px] xl:min-h-[420px] flex-col gap-6 p-4 small:p-7 lg:p-8 overflow-hidden lg:overflow-visible costum-gradient rounded-lg">
                     <div class="grid lg:grid-cols-12 gap-4 relative h-full">
                         <div class="flex items-end h-full lg:col-span-7 relative">
                             <div class="flex flex-col gap-7">
@@ -34,19 +34,19 @@
                                     </svg>
                                 </div>
                                 <h1
-                                    class="w-full text-3xl leading-snug md:text-4xl font-semibold text-white z-50 text-left">
+                                    class="w-full text-xl small:text-3xl leading-snug md:text-4xl font-semibold text-white z-50 text-left">
                                     Kusoma.Io la plateforme qui booste votre apprentissage
                                 </h1>
-                                <p class="w-full text-gray-100 font-normal text-xl z-50 text-justify">
+                                <p class="w-full text-gray-100 font-normal text-lg sm:text-xl z-50 text-justify">
                                     Lörem ipsum kontraryn berat infranes. Såskajöskapet. Domirtad gigaska:
                                     kohalig spejeligt pode. Nosk antina dinening jag anapp.
                                 </p>
-                                <div class="flex justify-start gap-2">
+                                <div class="flex flex-col sm:flex-row justify-center w-full sm:px-0 sm:justify-start gap-2">
                                     <a href=""
-                                        class="bg-white rounded-lg text-center text-primary px-4 py-3 pr-6 text-base transition duration-300 btnClpOnRight">Commencer
+                                        class="bg-white w-full sm:w-auto text-center rounded-lg text-primary px-4 py-3 pr-6 text-base transition duration-300 btnClpOnRight">Commencer
                                         mon cours</a>
                                     <a href=""
-                                        class="bg-[#6A20E2] rounded-lg text-white text-center px-4 pl-6 py-3 text-base transition duration-300 btnClpOnLeft">Devenir
+                                        class="bg-[#6A20E2] rounded-lg sm:w-auto text-white text-center px-4 pl-6 py-3 text-base transition duration-300 btnClpOnLeft">Devenir
                                         instructeur</a>
                                 </div>
                             </div>
@@ -178,7 +178,7 @@
                     </h1>
                 </div>
                 <div class=" md:min-w-[200px]  block">
-                    <a href="" class="text-primary bg-white text-sm font-semibold rounded-lg px-4 py-3 transition duration-300 ">
+                    <a href="" class="text-primary bg-white text-sm font-semibold rounded-lg px-2 py-2 small:px-4 small:py-3 transition duration-300 ">
                         Commencer maintenant
                     </a>
                 </div>

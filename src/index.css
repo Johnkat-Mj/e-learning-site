@@ -15,13 +15,17 @@ body
     background: linear-gradient(249.32deg, #7325F1 12.51%, rgba(115, 37, 241, 0.99) 57.48%);
 }
 
-.btnClpOnRight
+@media (min-width: 650px) {
+    .btnClpOnRight
 {
     clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
 }
 .btnClpOnLeft{
     clip-path: polygon( 5% 0, 100% 0, 100% 100%, 0% 100%);
 }
+}
+
+
 
 @layer components
 {

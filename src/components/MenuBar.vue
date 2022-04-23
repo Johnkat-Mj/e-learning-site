@@ -55,19 +55,24 @@
                                     :class='{ "activeItem": selectedItem === 0 }'>Accueil</router-link>
                             </li>
                             <li class="w-full">
-                                <router-link to="/Cours" @click.prevent="changetItem(1)"
+                                <router-link to="/Blog" @click.prevent="changetItem(1)"
                                     class="w-full flex px-4 py-3 rounded-md transition-all duration-300 before:absolute before:w-[5px] before:z-[1050] before:h-[60%] before:bg-white before:top-1/2 before:-translate-y-1/2 before:rounded-lg before:-left-full before:transition-all before:duration-300"
-                                    :class='{ "activeItem": selectedItem === 1 }'>Cours</router-link>
+                                    :class='{ "activeItem": selectedItem === 1 }'>Blog</router-link>
                             </li>
                             <li class="w-full">
-                                <router-link @click.prevent="changetItem(2)" to=""
+                                <router-link to="/Cours" @click.prevent="changetItem(2)"
                                     class="w-full flex px-4 py-3 rounded-md transition-all duration-300 before:absolute before:w-[5px] before:z-[1050] before:h-[60%] before:bg-white before:top-1/2 before:-translate-y-1/2 before:rounded-lg before:-left-full before:transition-all before:duration-300"
-                                    :class='{ "activeItem": selectedItem === 2 }'>Communauté</router-link>
+                                    :class='{ "activeItem": selectedItem === 2 }'>Cours</router-link>
                             </li>
                             <li class="w-full">
-                                <router-link @click.prevent="changetItem(3)" to=""
+                                <router-link @click.prevent="changetItem(3)" to="/Community"
                                     class="w-full flex px-4 py-3 rounded-md transition-all duration-300 before:absolute before:w-[5px] before:z-[1050] before:h-[60%] before:bg-white before:top-1/2 before:-translate-y-1/2 before:rounded-lg before:-left-full before:transition-all before:duration-300"
-                                    :class='{ "activeItem": selectedItem === 3 }'>F.A.Q</router-link>
+                                    :class='{ "activeItem": selectedItem === 3 }'>Communauté</router-link>
+                            </li>
+                            <li class="w-full">
+                                <router-link @click.prevent="changetItem(4)" to=""
+                                    class="w-full flex px-4 py-3 rounded-md transition-all duration-300 before:absolute before:w-[5px] before:z-[1050] before:h-[60%] before:bg-white before:top-1/2 before:-translate-y-1/2 before:rounded-lg before:-left-full before:transition-all before:duration-300"
+                                    :class='{ "activeItem": selectedItem === 4 }'>F.A.Q</router-link>
                             </li>
                         </ul>
                         <div id="copyR"
@@ -83,18 +88,18 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="/Cours" class="transition duration-300 hover:text-f-color-title1">Blog
+                        <router-link to="/Blog" class="transition duration-300 hover:text-f-color-title1">Blog
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="/" class="transition duration-300 hover:text-f-color-title1">Cours
+                        <router-link to="/Cours" class="transition duration-300 hover:text-f-color-title1">Cours
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="/" class="transition duration-300 hover:text-f-color-title1">Communauté
+                        <router-link to="/Community" class="transition duration-300 hover:text-f-color-title1">Communauté
                         </router-link>
                     </li>
-                    <li class="flex justify-center items-center p-2 rounded-xl bg-primary text-white">
+                    <li class="flex justify-center items-center p-2 rounded-xl bg-primary text-white cursor-pointer">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor" stroke-width="2">

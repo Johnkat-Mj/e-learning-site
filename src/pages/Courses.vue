@@ -1,24 +1,31 @@
 <template>
     <section class="relative flex items-center py-6 overflow-hidden">
         <div class="max-w-screen-lg px-4 sm:w-10/12 sm:px-0 lg:max-w-screen-xl mx-auto relative">
-            <div class="flex items-center justify-center w-full p-4 rounded-lg relative costum-gradient min-h-[250px]">
-                <div class="absolute bottom-0 right-0">
-                    <img src="./../assets/happyWithBook.png" alt="happy" class="max-h-[270px]">
+            <div
+                class="w-full relative pt-3 sm:pt-0 md:min-h-[270px] flex items-end">
+                <div class="absolute bottom-0 right-0 z-10 flex h-full justify-end items-end">
+                    <img src="./../assets/happyWithBook.png" alt="happy" class="w-2/5">
                 </div>
-                <div class="hidden sm:block absolute bottom-0 left-0">
-                    <img src="./../assets/happyWithBook.png" alt="happy" class="max-h-[270px]">
+                <div class="w-full relative px-4 py-5 sm:py-10 rounded-lg costum-gradient flex items-center flex-col gap-6 justify-center ">
+                    <div class="flex sm:w-10/12 lg:w-9/12 z-20">
+                        <h1 class="z-20 text-2xl md:text-3xl font-semibold text-white">Trouvez les meilleurs cours sur notre plateforme</h1>
+                    </div>
+                    <div class="absolute w-32 h-32 bg-white rounded-full bg-opacity-20 z-20 top-3 left-3"></div>
+                    <div class="absolute w-32 h-32 bg-white rounded-full bg-opacity-20 z-20 bottom-0 right-3/4"></div>
+                    <div class="absolute w-32 h-32 bg-white rounded-full bg-opacity-20 z-20 top-3 left-2/4"></div>
+                    <div class="absolute w-32 h-32 bg-white rounded-full bg-opacity-20 z-20 bottom-0 left-3/5"></div>
+                    <form class="relative w-full overflow-hidden sm:w-10/12 lg:w-9/12 z-30">
+                        <input type="text" placeholder="Search here"
+                            class="w-full text-f-color-titl2 flex items-center gap-2 relative px-4 pl-10 py-3 bg-gray-100 border-2 border-gray-200 rounded-lg">
+                        <span class="absolute left-4 top-1/2 -translate-y-1/2 text-f-color-titl2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </span>
+                    </form>
                 </div>
-                <form class="relative w-full overflow-hidden sm:w-10/12 lg:w-9/12">
-                    <input type="text" placeholder="Search here"
-                        class="w-full text-f-color-titl2 flex items-center gap-2 relative px-4 pl-10 py-3 bg-gray-100 border-2 border-gray-200 rounded-lg">
-                    <span class="absolute left-4 top-1/2 -translate-y-1/2 text-f-color-titl2">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                        </svg>
-                    </span>
-                </form>
 
             </div>
 
@@ -28,8 +35,7 @@
                         Cours recents
                     </h1>
                 </div>
-                <div
-                    class="grid md:grid-cols-3 md:gap-7 align-middle items-center justify-center gap-5 sm:grid-cols-2">
+                <div class="grid md:grid-cols-3 md:gap-7 align-middle items-center justify-center gap-5 sm:grid-cols-2">
                     <CardCourse v-for="course in courses" :imageCover="course.imageCover" :title="course.title"
                         :description="course.description" :authorAv="course.authorAv" :authorName="course.authorName"
                         :authorTitle="course.authorTitle" />

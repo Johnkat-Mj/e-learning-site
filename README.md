@@ -1,7 +1,13 @@
-# Vue 3 + Vite
+# Vue 3 + tailwindcss
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Simple site statique E-learning ( Vue 3 et tailwindcss)
 
-## Recommended IDE Setup
+# Installation
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+J'ai eu a utilisé vite pour créer le projet
+ - npm create vite@latest e-learning-site -- --template vue 
+ - npm install vue-router@4
+ - npm install vuex@next --save
+ - npm install -D tailwindcss postcss autoprefixer
+ - npm install -D @tailwindcss/line-clamp
+
